@@ -2,8 +2,7 @@ const Event = require('../../../modals/event');
 const Comment = require('../../../modals/Comment');
 const { OAuth2Client } = require('google-auth-library');
 
-// const { GOOGLE_CLIENT_ID } = process.env;
-GOOGLE_CLIENT_ID = "http://811977082670-a85oba4fdo7aob3njl31e8378e8fs9bk.apps.googleusercontent.com";
+const { GOOGLE_CLIENT_ID } = process.env;
 module.exports.create = async function (req, res) {
   try {
     const { tokenId, parent } = req.body;
